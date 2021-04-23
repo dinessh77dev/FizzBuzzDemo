@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         return when (number) {
             0 -> "$number"
             3 -> "FIZZ"
+            5 -> "BUZZ"
             else -> "$number"
         }
     }

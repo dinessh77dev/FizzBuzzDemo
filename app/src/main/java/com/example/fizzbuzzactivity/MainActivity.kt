@@ -12,9 +12,14 @@ class MainActivity : AppCompatActivity() {
     fun fizzBuzz(number: Int): String {
         if (number == 0) return "$number"
         return when {
-            number % 3 == 0 -> "FIZZ${if (number % 5 == 0) "BUZZ" else ""}"
-            number % 5 == 0 -> "BUZZ"
+            number % 3 == 0 -> "$FIZZ${if (number % 5 == 0) BUZZ else ""}"
+            number % 5 == 0 -> BUZZ
             else -> "$number"
         }
+    }
+
+    companion object {
+        const val FIZZ = "FIZZ"
+        const val BUZZ = "BUZZ"
     }
 }

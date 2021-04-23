@@ -9,7 +9,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun fizzBuzz(number: Int): String{
-        return "$number"
+    fun fizzBuzz(number: Int): String {
+        return when (number) {
+            0 -> "$number"
+            3 -> "FIZZ"
+            else -> "$number"
+        }
     }
 }

@@ -17,4 +17,9 @@ class MainActivityTest {
         assertEquals("1",activity.fizzBuzz(1))
     }
 
+    @Test
+    fun test_value_of_3(){
+        assertEquals("FIZZ",activity.fizzBuzz(3))
+    }
+
 }

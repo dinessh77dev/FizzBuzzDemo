@@ -10,10 +10,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun fizzBuzz(number: Int): String {
+        if (number == 0) return "$number"
         return when {
-            number == 0 -> "$number"
-            number % 3 == 0 && number % 5 == 0 -> "FIZZBUZZ"
-            number % 3 == 0 -> "FIZZ"
+            number % 3 == 0 -> "FIZZ${if (number % 5 == 0) "BUZZ" else ""}"
             number % 5 == 0 -> "BUZZ"
             else -> "$number"
         }

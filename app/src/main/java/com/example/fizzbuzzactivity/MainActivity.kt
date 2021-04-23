@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun fizzBuzz(number: Int): String {
-        return when (number) {
-            0 -> "$number"
-            3 -> "FIZZ"
-            5 -> "BUZZ"
+        return when {
+            number == 0 -> "$number"
+            number % 3 == 0 -> "FIZZ"
+            number == 5 -> "BUZZ"
             else -> "$number"
         }
     }

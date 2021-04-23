@@ -12,4 +12,9 @@ class MainActivityTest {
         assertEquals("0",activity.fizzBuzz(0))
     }
 
+    @Test
+    fun test_value_of_1(){
+        assertEquals("1",activity.fizzBuzz(1))
+    }
+
 }

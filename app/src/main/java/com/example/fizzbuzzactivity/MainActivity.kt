@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun fizzBuzz(number: Int): String{
-        return "0"
+        return "$number"
     }
 }
